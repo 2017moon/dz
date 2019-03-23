@@ -1,0 +1,135 @@
+/* pages/article/detail.wxss */
+@import "/wxParse/wxParse.wxss";
+view{
+  font-size: 30rpx;
+}
+button::after {
+  border: none;
+  padding: 20rpx;
+}
+button {
+  background-color: #fff;
+  padding: 20rpx;
+  margin: 0px;
+  border-radius:0px; 
+}
+
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+/*  */
+.body_view{
+  padding: 10rpx 15rpx 10rpx 15rpx;
+}
+.wxParse-img{
+  padding: 10rpx
+}
+/*  */
+.title{
+  width:100%;
+  text-align:center;
+  font-size:40rpx;
+  margin:11rpx auto;
+  font-weight:800;
+}
+.date{
+  margin: 15rpx;
+  font-size: 28rpx;
+  color:#6a6a6a;
+}
+.footer{
+ width:100%;
+ padding:10rpx;
+ text-align: center;
+ padding-bottom:80rpx;
+}
+.qr_code_view{
+  width:100%;
+  text-align:center;
+  margin-bottom: 80rpx;
+}
+.qr_code{
+  width: 300rpx;
+  height: 300rpx;
+  margin: auto;
+}
+.loding{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;/*垂直居中*/
+    justify-content: center;/*水平居中*/
+}
+.loding_img {
+  width: 100rpx;
+  height: 100rpx;
+}
+.fh_home{
+  width: 80rpx;
+  font-weight: 800;
+  padding: 10rpx;
+}
+.fh_home_view{
+  position: fixed;
+  width: 100%;
+  height: 80rpx;
+  bottom: 0rpx;
+  background: #fff;
+  box-shadow: 0rpx 6rpx 3rpx 13rpx #ccc;
+}
+.button_s_img{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right:60rpx;
+}
+.comment_input{
+  border:1px solid #ccc;
+  margin:0rpx 10rpx;
+  padding:1rpx 1rpx 1rpx 20rpx;
+  border-radius:30rpx;
+}
+.send_btn{
+  width:100rpx;
+  border-radius:30rpx;
+  border:1px solid #ccc;
+  text-align:center;
+  height:50rpx;
+  line-height:50rpx;
+  margin:auto 10rpx;
+}
+.back_view{
+  margin-left:20rpx;
+  margin-top:10rpx;
+}
+.share_view{
+  margin-right:20rpx;
+  margin-top:10rpx;
+}
+.button_s_btn{
+    width: 60rpx;
+    height: 60rpx;
+    margin-right:60rpx;
+    padding: 10rpx 20rpx;
+    /* border: 1px solid #ccc; */
+}
+
+.nodata{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;/*垂直居中*/
+    justify-content: center;/*水平居中*/
+    background: #f0f0f0;
+}
+.quesheng_text{
+  text-align: center;
+  font-size: 26rpx;
+  color: #000;
+}

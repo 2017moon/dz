@@ -1,0 +1,105 @@
+/* pages/index/index.wxss */
+.clear{
+  clear: both;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.search_view{
+  width:710rpx;
+  padding:20rpx 20rpx;
+}
+
+.search_input{
+  border:1px solid #ccc;
+  width:650rpx;
+  border-radius:20rpx;
+  padding: 5rpx 30rpx;
+  box-sizing: content-box;
+}
+.search_icon{
+  position:absolute;
+  left:660rpx;
+  top:30rpx;
+}
+.rank_articl{
+  width: 213rpx;
+  height:120rpx;
+  border:1px solid #ccc;
+  border-radius:10px;
+  padding:5rpx 5rpx;
+  margin-left:10rpx; 
+  margin: 5rpx 5rpx 5rpx 5rpx;
+  color: #fff;
+  font-size: 40rpx;
+  text-align: center;
+  font-weight: 800;
+  line-height:120rpx;
+}
+.rank_view{
+  padding: 10rpx 20rpx;
+}
+.tuijian{
+  margin: 30rpx 0px 10rpx 30rpx;
+  font-size:40rpx;
+  font-weight:900;
+}
+.more{
+  font-size:27rpx;
+  margin-right:30rpx;
+  color:#6a6a6a;
+  margin-top: 30rpx;
+}
+.titie_image{
+  width: 140rpx;
+  height: 140rpx;
+  background:#00000070;
+}
+.list_view{
+  /* padding:5rpx 30rpx; */
+  /* margin-bottom: 20rpx; */
+  margin: 10rpx 30rpx 20rpx 30rpx; 
+  border-bottom: 1rpx solid #ccc;
+}
+.list_title{
+  font-size: 30rpx;
+  padding: 5rpx 0rpx;
+  max-width: 470rpx;
+}
+.list_date{
+  font-size: 27rpx;
+  padding: 5rpx 0rpx;
+  color: #6a6a6a;
+  margin-top: 40rpx;
+}
+.footer{
+  width: 710rpx;
+  margin: 25rpx  auto;
+  text-align:center;
+  height:110rpx;
+  line-height:110rpx;
+  font-size:25rpx;
+  border-top:1px solid #ccc;
+  color: #6a6a6a;
+}
+.gl{
+  background: url('https://mmbiz.qpic.cn/mmbiz_jpg/8rQN8DwQ5Kd5nVKOJQgjEEmSZRjEBGwVjVWKfS4lLBObXy4og73UibeM6Ec91sq3ZES5QtOUflfTgm7M5gQmibhg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1');
+  /* background-repeat:no-repeat;  */
+  background-size: 100%; 
+  -moz-background-size:100%;
+}
+.dj{
+  background: url('https://mmbiz.qpic.cn/mmbiz_jpg/8rQN8DwQ5Kd5nVKOJQgjEEmSZRjEBGwVibH7vFouLicuErd6EIS72RSwtiawYxAylO76aXZFIwo63XMtRCibBkjuCw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1');
+  /* background-repeat:no-repeat;  */
+  background-size: 100%;
+   -moz-background-size:100%;
+}
+.dt{
+  background: url('https://mmbiz.qpic.cn/mmbiz_jpg/8rQN8DwQ5Kd5nVKOJQgjEEmSZRjEBGwV7Q8hCZaLVJAdV18bnFhtAuBOX5DoWd36a1fNoU3vAZXH89USPwsD5Q/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1');
+  /* background-repeat:no-repeat; */
+   background-size: 100%;
+    -moz-background-size:100%;
+}

@@ -1,0 +1,56 @@
+/* pages/article/list.wxss */
+.clear{
+  clear: both;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.tuijian{
+  margin: 30rpx 0px 10rpx 30rpx;
+}
+.titie_image{
+  width: 140rpx;
+  height: 120rpx;
+}
+.list_view{
+  /* padding:5rpx 30rpx; */
+  /* margin-bottom: 20rpx; */
+  margin: 5rpx 30rpx 15rpx 30rpx;
+  border-bottom: 1px solid #ccc;
+}
+.list_title{
+  font-size: 30rpx;
+  padding: 5rpx 0rpx;
+}
+.list_date{
+  font-size: 27rpx;
+  padding: 5rpx 0rpx;
+  color: #6a6a6a;
+  margin-top:25rpx;
+}
+.footer{
+  width: 710rpx;
+  margin: 25rpx  auto;
+  text-align:center;
+  height:110rpx;
+  line-height:110rpx;
+  font-size:25rpx;
+  border-top:1px solid #ccc;
+  color: #6a6a6a;
+}
+.loding{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;/*垂直居中*/
+    justify-content: center;/*水平居中*/
+}
+.loding_img {
+  width: 100rpx;
+  height: 100rpx;
+}

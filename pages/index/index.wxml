@@ -1,0 +1,57 @@
+<!--pages/index/index.wxml-->
+<!-- 搜索框 -->
+<!-- <view class='search_view'>
+  <input class='search_input fl' type='text' placeholder='输入查找的攻略' confirm-type='search' ></input>
+  <icon class='search_icon' type='search' size='45rpx'></icon>
+  <view class='clear'></view>
+</view> -->
+<!-- 推荐分类 -->
+<view class='tuijian'>推荐</view>
+<view class="rank_view">
+  <view class="rank_articl fl gl" bindtap='golist' data-type="1">攻略大全</view>
+  <view class="rank_articl fl dj" bindtap='golist' data-type="3">最新资讯</view>
+  <view class="rank_articl fl dt" bindtap='golist' data-type="2">地图攻略</view>
+  <view class='clear'></view>
+</view>
+<!-- 推荐攻略列表 -->
+<view wx:if="{{gl_list.length > 0}}">
+<view class='tuijian fl'>游戏攻略</view>
+<view class="fr more" wx:if="{{gl_list.length > list_length}}" bindtap="golist"data-type="1"  >更多...</view>
+<view class='clear list_view' wx:for="{{gl_list}}" wx:for-item="list" bindtap="godetail" data-id="{{list.id}}" >
+  <view class='fl'>
+    <view class='list_title'>{{list.title}}</view>
+    <view class='list_date'>{{list.create_date}}</view>
+  </view>
+  <view class='fr'><image mode="aspectFill"  class='titie_image' src='{{list.list_img}}'></image></view>
+  <view class='clear'></view>
+</view>
+</view>
+<!-- 地图攻略 -->
+<view wx:if="{{dt_list.length > 0}}">
+<view class='tuijian fl'>地图攻略</view>
+<view class="fr more" wx:if="{{dt_list.length > list_length}}" bindtap="golist"data-type="2" >更多...</view>
+<view class='clear list_view' wx:for="{{dt_list}}" wx:for-item="list" bindtap="godetail" data-id="{{list.id}}" >
+  <view class='fl'>
+    <view class='list_title'>{{list.title}}</view>
+    <view class='list_date'>{{list.create_date}}</view>
+  </view>
+  <view class='fr'><image mode="aspectFill" class='titie_image' src='{{list.list_img}}'></image></view>
+  <view class='clear'></view>
+</view>
+
+</view>
+<!-- 最新资讯 -->
+<view wx:if="{{zx_list.length > 0}}">
+<view class='tuijian fl'>最新资讯</view>
+<view class="fr more"  wx:if="{{zx_list.length > list_length}}" bindtap="golist"data-type="3" >更多...</view>
+<view class='clear list_view' wx:for="{{zx_list}}" wx:for-item="list" bindtap="godetail" data-id="{{list.id}}">
+  <view class='fl'>
+    <view class='list_title'>{{list.title}}</view>
+    <view class='list_date'>{{list.create_date}}</view>
+  </view>
+  <view class='fr'><image mode="aspectFill" class='titie_image' src='{{list.list_img}}'></image></view>
+  <view class='clear'></view>
+</view>
+
+</view>
+<view class='footer'> - 到底啦 -</view>

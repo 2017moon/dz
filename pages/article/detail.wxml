@@ -1,0 +1,54 @@
+
+<view>
+  <rich-text nodes="{{contents}}"></rich-text>
+</view>
+<!--pages/article/detail.wxml-->
+<!-- 加载 -->
+<view class='loding' wx:if="{{loding && !no_data}}">
+  <image class='loding_img' src="/images/loding.gif"></image>
+</view>
+<!-- 没有数据 or 没有id -->
+<view class='nodata' wx:if="{{!loding && no_data}}" bindtap='backHome'>
+  <view>
+    <image src="/images/quesheng.jpg"></image>
+  </view>
+  <view class='quesheng_text'>
+    <text>
+    你所查询的内容不存在或已删除~~\n
+    返回首页
+    </text>
+  </view>
+</view>
+<view wx:if="{{!loding && !no_data}}">
+<!-- 标题 -->
+  <view>
+    <view class='title'>{{title}}</view>
+    <view class='date'>{{create_date}}</view>
+  </view>
+  <!-- 内容 -->
+  <view class='body_view'>
+  <import src="/wxParse/wxParse.wxml"/>
+  <template is="wxParse" data="{{wxParseData:article.nodes}}"/> 
+  </view>
+  <!-- 底部 -->
+  <view class='foother'>
+    <view class='qr_code_view' >
+    <view>保存图片，扫码关注公众号，获取更多攻略</view>
+      <image  class="qr_code" src='https://static.phpshiti.top/static/images/editImg/201812/28/1546009338338177.jpg' bindtap='Img' data-url="https://static.phpshiti.top/static/images/editImg/201812/28/1546009338338177.jpg"></image>
+    </view>
+  </view>
+<!-- 底部评论组 -->
+<view class='fh_home fh_home_view'>
+  <view class='fl back_view'>
+    <!-- <input type="text" name="comment" class='fl comment_input' placeholder='说点什么吧~~'></input>
+    <text class='fl send_btn'>评论</text> -->
+    <image class='button_s_img' src='/images/back.png'  bindtap="callBack"></image>
+  </view>
+  <view class='fr share_view'>
+     <image class='button_s_img fl' src="{{is_like == 1 ? '/images/like_d.png' : '/images/like.png'}}" bindtap="islike" data-id="{{id}}" data-is_like="{{is_like}}"></image>
+     <!-- <image class='button_s_img fl' src='/images/peng-you-quan.png'></image> -->
+      <!-- <image class='button_s_img' src='/images/share.png' open-type="share" ></image> -->
+      <button class='button_s_btn fl' style="background: url('https://static.phpshiti.top/blog/icon/x_share.png');background-repeat:no-repeat; background-size: 100%; -moz-background-size:100%;" open-type="share"></button>
+  </view>
+</view>
+</view>

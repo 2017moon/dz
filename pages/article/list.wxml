@@ -1,0 +1,18 @@
+<!-- 加载 -->
+<view class='loding' wx:if="{{loding}}">
+  <image class='loding_img' src="/images/loding.gif"></image>
+</view>
+<!-- 列表 -->
+<!-- <view class='tuijian fl'>{{title}}</view> -->
+<view wx:if="{{!loding}}" class='clear list_view' wx:for="{{list}}" wx:for-item="list" bindtap="godetail" data-id="{{list.id}}" >
+  <view class='fl'>
+    <view class='list_title'>{{list.title}}</view>
+    <view class='list_date'>{{list.create_date}}</view>
+  </view>
+  <view class='fr'>
+  <image  class='titie_image' src='{{list.list_img}}'></image>
+  </view>
+  <view class='clear'></view>
+</view>
+<view class='clear'></view>
+<view class='footer' wx:if="{{!loding}}" > - 到底啦 -</view>
